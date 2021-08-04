@@ -46,7 +46,7 @@ describe Player do
 
     it "should be able to calculate in-progress game for a new player" do
 		luca = PLAYER_DATA.find { |v| v.name == "Luca" }
-		expect(luca.calculate_score).to eql(274)
+		expect(luca.calculate_score).to eql(99)
 	end
 
   end
