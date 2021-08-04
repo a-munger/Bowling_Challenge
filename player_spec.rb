@@ -44,8 +44,10 @@ describe Player do
       expect(bella.calculate_score).to eql(274)
     end
 
-    # This test is not required, but if you want bonus points, go for it :)
-    it "should be able to calculate in-progress game for a new player"
+    it "should be able to calculate in-progress game for a new player" do
+		luca = PLAYER_DATA.find { |v| v.name == "Luca" }
+		expect(luca.calculate_score).to eql(274)
+	end
 
   end
 end
